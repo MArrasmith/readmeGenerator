@@ -20,6 +20,16 @@ const questions = [
     },
     {
         type:'input',
+        name:'liveSite',
+        message:'What is the URL to your published site?'
+    },
+    {
+        type:'input',
+        name:'repository',
+        message:'What is the URL to your GitHub repository?'
+    },
+    {
+        type:'input',
         name:'credits',
         message:'Did you partner with any collaborators on your project or utilize any third party sites or assets? If so list them here.'
     },
@@ -37,16 +47,6 @@ const questions = [
         'MIT License',
         'Mozilla Public License'
         ]
-    },
-    {
-        type:'input',
-        name:'liveSite',
-        message:'What is the URL to your published site?'
-    },
-    {
-        type:'input',
-        name:'repository',
-        message:'What is the URL to your GitHub repository?'
     }
 ];
 
