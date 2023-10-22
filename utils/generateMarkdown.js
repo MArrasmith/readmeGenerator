@@ -26,12 +26,12 @@ function generateMarkdown(data) {
 
   ## URL to GitHub Repopository
   ${data.repository}
-  
+
   ## Credits
   ${data.credits}
 
   ## License
-  ${renderLicenseBadge()}
+  ${data.license, renderLicenseBadge()}
   `;
 }
 
