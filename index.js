@@ -2,7 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-const renderLicenseBadge = require("./utils/generateMarkdown").renderLicenseBadge;
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -16,6 +15,11 @@ const questions = () => {
             type: 'input',
             name: 'description',
             message: 'Provide a short description of the purpose of your project.'
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'Are there any special installation instructions for your project?'
         },
         {
             type: 'input',
@@ -51,6 +55,21 @@ const questions = () => {
                     'MIT License',
                     'Mozilla Public License'
                 ]
+        },
+        {
+            type: 'input',
+            name: 'username',
+            message: 'Please provide your GitHub username?'
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address?'
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Do you you have any tests that can be ran for your project? If so, how do you run them?'
         }
     ]);
 }
