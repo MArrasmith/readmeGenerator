@@ -18,10 +18,16 @@ function renderLicenseBadge(value) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-
-// TODO: Create a function to generate markdown for README
+//  THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description,
+//Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+//  THEN this is displayed as the title of the README
+//  THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+//  THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled
+//License that explains which license the application is covered under
+//  THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+//  THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+//  WHEN I click on the links in the Table of Contents
+//  THEN I am taken to the corresponding section of the README
 function generateMarkdown(data) {
   return `
   # ${data.title}
@@ -61,7 +67,7 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any questions regarding this project, please reach out via GitHub or contact via email.
-  GitHub - ${data.username}
+  [https://github.com/${data.username}]
   Email Address - ${data.email}
   `;
 }
